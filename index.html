@@ -27,27 +27,27 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
 </head>
-<body class="font-rationale bg-white text-main">
+<body class="bg-white font-rationale text-main">
   <div id="particles-js"></div>
-  <img src="./img/jslogo.png" alt="Javascript" class="absolute h-20 w-20 rounded-full z-10 img1 border-8 border-double shadow-lg border-dot object-cover object-bottom">
-  <img src="./img/htmllogo.png" alt="Javascript" class="absolute h-12 w-12 rounded-full z-10 img2 border-8 border-double shadow-lg border-dot object-cover object-bottom bg-white">
-  <img src="./img/csslogo.png" alt="Javascript" class="absolute h-14 w-14 rounded-full z-10 img3 border-8 border-double shadow-lg border-dot object-cover object-bottom bg-white">
-  <img src="./img/vuelogo.png" alt="Javascript" class="absolute h-14 w-14 rounded-full z-10 img4 border-8 border-double shadow-lg border-dot object-cover object-center bg-white">
-  <img src="./img/tailwindcsslogo.png" alt="Javascript" class="absolute h-16 w-16 rounded-full z-10 img5 border-8 border-double shadow-lg border-dot object-cover object-bottom bg-white">
-  <img src="./img/grapgqllogo.png" alt="Javascript" class="absolute h-10 w-10 rounded-full z-10 img6 border-8 border-double shadow-lg border-dot object-cover object-bottom bg-white">
-  <img src="./img/nodejslogo.png" alt="Javascript" class="absolute h-16 w-16 rounded-full z-10 img7 border-8 border-double shadow-lg border-dot object-cover object-bottom bg-white">
-  <img src="./img/nodejslogo.png" alt="Javascript" class="absolute h-12 w-12 rounded-full z-10 img8 border-8 border-double shadow-lg border-dot object-cover object-bottom bg-white">
-  <header id="nav-bar" class="hidden md:block fixed top-0 right-0 w-full bg-white z-10 nav-bar">
-    <div class="flex items-center justify-between py-4 text-xl px-10">
+  <img src="./img/jslogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-20 h-20 border-8 border-double rounded-full shadow-lg img1 border-dot">
+  <img src="./img/htmllogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-12 h-12 bg-white border-8 border-double rounded-full shadow-lg img2 border-dot">
+  <img src="./img/csslogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom bg-white border-8 border-double rounded-full shadow-lg h-14 w-14 img3 border-dot">
+  <img src="./img/vuelogo.png" alt="Javascript" class="absolute z-10 object-cover object-center bg-white border-8 border-double rounded-full shadow-lg h-14 w-14 img4 border-dot">
+  <img src="./img/tailwindcsslogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-16 h-16 bg-white border-8 border-double rounded-full shadow-lg img5 border-dot">
+  <img src="./img/grapgqllogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-10 h-10 bg-white border-8 border-double rounded-full shadow-lg img6 border-dot">
+  <img src="./img/nodejslogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-16 h-16 bg-white border-8 border-double rounded-full shadow-lg img7 border-dot">
+  <img src="./img/nodejslogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-12 h-12 bg-white border-8 border-double rounded-full shadow-lg img8 border-dot">
+  <header id="nav-bar" class="fixed top-0 right-0 z-10 hidden w-full bg-white md:block nav-bar">
+    <div class="flex items-center justify-between px-10 py-4 text-xl">
       <a href="#" class="w-3/5 text-start item">Home</a>
-      <div class="w-2/5 flex items-center justify-end">
+      <div class="flex items-center justify-end w-2/5">
         <a href="#aboutme" class="text-right item">About me</a>
         <a href="#experience" class="ml-4 text-right item">Experience</a>
         <a href="#more" class="ml-4 text-right item">More</a>
-        <a href="https://www.tiktok.com/@lababito" target="_blank" class="col-span-2 flexitems-center justify-end ml-4 item hover:bg-dot">
-          <p class="flex items-center justify-center h-6 min-w-32max-w-36 p-3 border-2 rounded border-main">
+        <a href="https://www.tiktok.com/@lababito" target="_blank" class="justify-end col-span-2 ml-4 flexitems-center item hover:bg-dot">
+          <p class="flex items-center justify-center h-6 p-3 border-2 rounded min-w-32max-w-36 border-main">
             <span>
-              <img src="./img/tt.png" alt="TikTok" class="h-4 w-4 mr-1">
+              <img src="./img/tt.png" alt="TikTok" class="w-4 h-4 mr-1">
             </span>
             <span>@lababito</span>
           </p>
@@ -55,10 +55,10 @@
       </div>
     </div>
   </header>
-  <section id="home" class="w-2/3 md:w-1/2 flex flex-col mx-auto h-screen justify-center relative border-b-2 border-main md:border-none mb-8 md:mb-0">
-    <h1 class="ml12 text-xl md:text-3xl">Palmidia Garay</h1>
+  <section id="home" class="relative flex flex-col justify-center w-2/3 h-screen mx-auto mb-8 border-b-2 md:w-1/2 border-main md:border-none md:mb-0">
+    <h1 class="text-xl ml12 md:text-3xl">Palmidia Garay</h1>
     <p class="ml-4">
-      <h1 class="ml11 text-5xl md:text-7xl">
+      <h1 class="text-5xl ml11 md:text-7xl">
         <span class="text-wrapper">
           <span class="line line1"></span>
           <span class="letters">Software developer</span>
@@ -66,14 +66,14 @@
       </h1>
     </p>
   </section>
-  <section id="aboutme" class="w-full md:w-2/3 md:grid md:grid-cols-12 md:mx-auto md:h-screen items-center px-4 md:px-0">
-    <div class="col-span-6 relative">
-      <h2 class="text-5xl md:text-8xl mb-4 md:mb-6 text-center md:text-left">
+  <section id="aboutme" class="items-center w-full px-4 md:w-2/3 md:grid md:grid-cols-12 md:mx-auto md:h-screen md:px-0">
+    <div class="relative col-span-6">
+      <h2 class="mb-4 text-5xl text-center md:text-8xl md:mb-6 md:text-left">
         About Me
       </h2>
       <img src="./img/me.png" alt="Palmidia Garay" class="object-cover object-center mx-auto md:mx-0">
     </div>
-    <div class="h-3/4 rounded-lg flex flex-col text-2xl shadow-xl col-span-6 bg-white p-8 overflow-scroll text-justify border-2 border-main mt-8 md:mt-0">
+    <div class="flex flex-col col-span-6 p-8 mt-8 overflow-scroll text-2xl text-justify bg-white border-2 rounded-lg shadow-xl h-3/4 border-main md:mt-0">
       <p class="mb-2">
         <span>It all started with a </span>
         <span class="font-semibold text-dot">“Hello world!”</span>
@@ -91,33 +91,33 @@
       </p>
       <p class="mb-4">
         <span>I have volunteered on a couple of programs, such as</span>
-        <span class="text-dot font-semibold">WILL (Alianzas Olascoaga),</span>
+        <span class="font-semibold text-dot">WILL (Alianzas Olascoaga),</span>
         <span>a mentoring program to help young women to get into STEM careers giving them confidence and guidance about the fears they have, and</span>
         <span class="font-semibold text-dot">FrontEnd Foxes (a tech community for women),</span>
         <span>planning the meetups for the community in Mexico City.</span>
       </p>
       <p class="mb-4">
         <span>I participated in the last three</span>
-        <span class="text-dot font-semibold">Dev Day 4 Women,</span>
+        <span class="font-semibold text-dot">Dev Day 4 Women,</span>
         <span>giving lightning talks about the interview process and how important it is to develop your soft skills in the tech industry.</span>
       </p>
       <p>
         <span>Last but not least, I recently started a TikTok account</span>
         <span>
-          <a href="https://www.tiktok.com/@lababito" target="_blank" class="font-semibold text-dot underline">@lababito</a>
+          <a href="https://www.tiktok.com/@lababito" target="_blank" class="font-semibold underline text-dot">@lababito</a>
         </span>
         <span>to share some of the tips and tricks that helped me grow as a woman, as a developer and as a person.</span>
       </p>
     </div>
   </section>
-  <div class="border-2 border-main w-2/3 mx-auto mt-16 mb-12 md:hidden"></div>
-  <section id="experience" class="md:w-2/3 mx-auto md:flex md:flex-col md:items-start md:mt-24">
-    <h2 class="text-5xl md:text-8xl mb-6 md:mb-8 text-center md:text-left">
+  <div class="w-2/3 mx-auto mt-16 mb-12 border-2 border-main md:hidden"></div>
+  <section id="experience" class="mx-auto md:w-2/3 md:flex md:flex-col md:items-start md:mt-24">
+    <h2 class="mb-6 text-5xl text-center md:text-8xl md:mb-8 md:text-left">
       Experience
     </h2>
-    <ul class="text-lg md:text-xl px-4">
-      <li class="flex flex-col bg-gradient-to-tl from-white to-dot pb-1 pl-1">
-        <div class="bg-white p-1">
+    <ul class="px-4 text-lg md:text-xl">
+      <li class="flex flex-col pb-1 pl-1 bg-gradient-to-tl from-white to-dot">
+        <div class="p-1 bg-white">
           <div class="p-6">
             <h3 class="font-bold text-dot">Apply Math and Computing</h3>
             <h4>UNAM FES Acatlán, México</h4>
@@ -126,8 +126,8 @@
           </div>
         </div>
       </li>
-      <li class="flex flex-col bg-gradient-to-tr from-white to-dot pb-1 pr-1">
-        <div class="bg-white p-1">
+      <li class="flex flex-col pb-1 pr-1 bg-gradient-to-tr from-white to-dot">
+        <div class="p-1 bg-white">
           <div class="p-6">
             <h3 class="font-bold text-dot">Network Engineer</h3>
             <h4>GSC Ericsson Mx</h4>
@@ -140,8 +140,8 @@
           </div>
         </div>
       </li>
-      <li class="flex flex-col bg-gradient-to-tr from-white to-dot pb-1 pl-1">
-        <div class="bg-white p-1">
+      <li class="flex flex-col pb-1 pl-1 bg-gradient-to-tr from-white to-dot">
+        <div class="p-1 bg-white">
           <div class="p-6">
             <h3 class="font-bold text-dot">IT Specialist</h3>
             <h4>Compucom</h4>
@@ -153,8 +153,8 @@
           </div>
         </div>
       </li>
-      <li class="flex flex-col bg-gradient-to-tr from-white to-dot pb-1 pr-1">
-        <div class="bg-white p-1">
+      <li class="flex flex-col pb-1 pr-1 bg-gradient-to-tr from-white to-dot">
+        <div class="p-1 bg-white">
           <div class="p-6">
             <h3 class="font-bold text-dot">FrontEnd developer & UX/UI Design</h3>
             <h4>Laboratoria CDMX</h4>
@@ -167,8 +167,8 @@
           </div>
         </div>
       </li>
-      <li class="flex flex-col bg-gradient-to-tr from-white to-dot pb-1 pl-1">
-        <div class="bg-white p-1">
+      <li class="flex flex-col pb-1 pl-1 bg-gradient-to-tr from-white to-dot">
+        <div class="p-1 bg-white">
           <div class="p-6">
             <h3 class="font-bold text-dot">FrontEnd Developer</h3>
             <h4>Gestionix (Konfio)</h4>
@@ -176,7 +176,7 @@
             <div>
               Developed from scratch a refreshed version of their Saas, a cloud business management system, built for small businesses.
               Helped creating the design system ensuring reusable and escalable components.
-              <ul class="list-disc list-inside mt-4">
+              <ul class="mt-4 list-disc list-inside">
                 Tech stack:
                 <li>VueJs 2</li>
                 <li>TailwindCss</li>
@@ -189,8 +189,8 @@
           </div>
         </div>
       </li>
-      <li class="flex flex-col bg-gradient-to-tr from-white to-dot pb-1 pr-1">
-        <div class="bg-white p-1">
+      <li class="flex flex-col pb-1 pr-1 bg-gradient-to-tr from-white to-dot">
+        <div class="p-1 bg-white">
           <div class="p-6">
             <h3 class="font-bold text-dot">FrontEnd Tech Lead</h3>
             <h4>WorkyRH</h4>
@@ -202,7 +202,7 @@
                 Refactored old components and features improving performance and usability.
                 Also, helped migrating from css preprocessor to TailwindCss for all the visual styling.
               </p>
-              <ul class="list-disc list-inside mt-4">
+              <ul class="mt-4 list-disc list-inside">
                 Tech stack:
                 <li>VueJs 2</li>
                 <li>TailwindCss</li>
@@ -217,8 +217,8 @@
           </div>
         </div>
       </li>
-      <li class="flex flex-col bg-gradient-to-tr from-white to-dot pb-1 pl-1">
-        <div class="bg-white p-1">
+      <li class="flex flex-col pb-1 pl-1 bg-gradient-to-tr from-white to-dot">
+        <div class="p-1 bg-white">
           <div class="p-6">
             <h3 class="font-bold text-dot">Engineering Team Lead</h3>
             <h4>Nowports</h4>
@@ -230,7 +230,7 @@
                 Helped developers estimating tasks and communicating with all the other teams in order to obtain all the resources that my team needed so they can create the solutions on time. <br>
                 Always provided posible solutions for every task and performing code reviews to ensure code quality.
               </p>
-              <ul class="list-disc list-inside mt-4">
+              <ul class="mt-4 list-disc list-inside">
                 Tech stack:
                 <li>ReactJs</li>
                 <li>NodeJs</li>
@@ -243,65 +243,108 @@
           </div>
         </div>
       </li>
+      <li class="flex flex-col pb-1 pr-1 bg-gradient-to-tr from-white to-dot">
+        <div class="p-1 bg-white">
+          <div class="p-6">
+            <h3 class="font-bold text-dot">Software Developer</h3>
+            <h4>Telos Labs</h4>
+            <h5>Jun 2022 - Oct 2022</h5>
+            <div>
+              <p>
+                Creating and mantaining projects for companies with social impact.
+              </p>
+              <ul class="mt-4 list-disc list-inside">
+                Tech stack:
+                <li>Ruby on Rails</li>
+                <li>TailwindCss</li>
+                <li>Slim HTML</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="flex flex-col pb-1 pl-1 bg-gradient-to-tr from-white to-dot">
+        <div class="p-1 bg-white">
+          <div class="p-6">
+            <h3 class="font-bold text-dot">UI / UX FrontEnd Developer</h3>
+            <h4>IFF (International Flavors & Fragances)</h4>
+            <h5>Current</h5>
+            <div>
+              <p>
+                Creating digital solutions for different engineering teams to visualized the data needed to take
+                quick decisions to improve business.
+                Involved in all the development process, from establishing the requirements to develop and deliver it, always looking to 
+                maintain the look and feel of the company.
+              </p>
+              <ul class="mt-4 list-disc list-inside">
+                Tech stack:
+                <li>ReactJs</li>
+                <li>Python</li>
+                <li>Material UI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
     </ul>
   </section>
-  <section id="more" class="w-2/3 grid grid-cols-12 mx-auto h-screen items-center relative">
-    <h2 class="text-8xl mb-4 mt-24 col-span-5">
+  <section id="more" class="relative grid items-center w-2/3 h-screen grid-cols-12 mx-auto">
+    <h2 class="col-span-5 mt-24 mb-4 text-8xl">
       More projects
     </h2>
-    <ul class="text-xl col-span-7">
-      <li class="bg-gradient-to-tl from-body to-dot p-1 rounded-lg shadow-lg img9 absolute flex items-center justify-center h-10">
-        <a href="http://danygonzalez.com/" target="_blank" class="p-1 bg-white hover:bg-dot hover:text-white rounded-lg flex items-center justify-center shadow-lg h-10">danygonzalez.com</a>
+    <ul class="col-span-7 text-xl">
+      <li class="absolute flex items-center justify-center h-10 p-1 rounded-lg shadow-lg bg-gradient-to-tl from-body to-dot img9">
+        <a href="http://danygonzalez.com/" target="_blank" class="flex items-center justify-center h-10 p-1 bg-white rounded-lg shadow-lg hover:bg-dot hover:text-white">danygonzalez.com</a>
       </li>
-      <li class="bg-gradient-to-tl from-body to-dot p-1 rounded-lg shadow-lg img10 absolute flex items-center justify-center h-10">
-        <a href="https://mx.leveler.info/" target="_blank" class="p-1 bg-white hover:bg-dot hover:text-white rounded-lg flex items-center justify-center shadow-lg h-10">leveler.info</a>
+      <li class="absolute flex items-center justify-center h-10 p-1 rounded-lg shadow-lg bg-gradient-to-tl from-body to-dot img10">
+        <a href="https://mx.leveler.info/" target="_blank" class="flex items-center justify-center h-10 p-1 bg-white rounded-lg shadow-lg hover:bg-dot hover:text-white">leveler.info</a>
       </li>
-      <li class="bg-gradient-to-tl from-body to-dot p-1 rounded-lg shadow-lg img11 absolute flex items-center justify-center h-10">
-        <a href="https://github.com/jetzable" target="_blank" class="p-1 bg-white hover:bg-dot hover:text-white rounded-lg flex items-center justify-center shadow-lg h-10">Github Account</a>
+      <li class="absolute flex items-center justify-center h-10 p-1 rounded-lg shadow-lg bg-gradient-to-tl from-body to-dot img11">
+        <a href="https://github.com/jetzable" target="_blank" class="flex items-center justify-center h-10 p-1 bg-white rounded-lg shadow-lg hover:bg-dot hover:text-white">Github Account</a>
       </li>
-      <li class="bg-gradient-to-tl from-body to-dot p-1 rounded-lg shadow-lg img12 absolute flex items-center justify-center h-10">
-        <a href="https://www.instagram.com/poderosamexico/" target="_blank" class="p-1 bg-white hover:bg-dot hover:text-white rounded-lg flex items-center justify-center shadow-lg h-10">PoderosaMx</a>
+      <li class="absolute flex items-center justify-center h-10 p-1 rounded-lg shadow-lg bg-gradient-to-tl from-body to-dot img12">
+        <a href="https://www.instagram.com/poderosamexico/" target="_blank" class="flex items-center justify-center h-10 p-1 bg-white rounded-lg shadow-lg hover:bg-dot hover:text-white">PoderosaMx</a>
       </li>
-      <li class="bg-gradient-to-tl from-body to-dot p-1 rounded-lg shadow-lg img13 absolute flex items-center justify-center h-10">
-        <a href="http://games.jetzable.com/" target="_blank" class="p-1 bg-white hover:bg-dot hover:text-white rounded-lg flex items-center justify-center shadow-lg h-10">Javascript Games</a>
+      <li class="absolute flex items-center justify-center h-10 p-1 rounded-lg shadow-lg bg-gradient-to-tl from-body to-dot img13">
+        <a href="http://games.jetzable.com/" target="_blank" class="flex items-center justify-center h-10 p-1 bg-white rounded-lg shadow-lg hover:bg-dot hover:text-white">Javascript Games</a>
       </li>
     </ul>
   </section>
-  <footer class="md:h-32 w-full bg-main text-white md:grid md:grid-cols-12 md:gap-4 p-4 md:p-8 flex items-center flex-col md:flex-row">
-    <h2 class="text-3xl mb-4 col-span-2">
+  <footer class="flex flex-col items-center w-full p-4 text-white md:h-32 bg-main md:grid md:grid-cols-12 md:gap-4 md:p-8 md:flex-row">
+    <h2 class="col-span-2 mb-4 text-3xl">
       Contact Me
     </h2>
     <div class="col-span-1 mb-4">
-      <a href="https://twitter.com/Jetzable" target="_blank" class="flex items-center flex-col">
-        <img src="./img/twitter.png" alt="Twitter" class="h-10 w-10 mb-1">
+      <a href="https://twitter.com/Jetzable" target="_blank" class="flex flex-col items-center">
+        <img src="./img/twitter.png" alt="Twitter" class="w-10 h-10 mb-1">
         <span>@jetzable</span>
       </a>
     </div>
     <div class="col-span-1 mb-4">
-      <a href="https://www.instagram.com/la_babito/" target="_blank" class="flex items-center flex-col">
-        <img src="./img/iglogo.png" alt="IG Personal" class="h-10 w-10 mb-1">
+      <a href="https://www.instagram.com/la_babito/" target="_blank" class="flex flex-col items-center">
+        <img src="./img/iglogo.png" alt="IG Personal" class="w-10 h-10 mb-1">
         <span>@La_babito</span>
       </a>
     </div>
     <div class="col-span-1 mb-4">
-      <a href="https://www.linkedin.com/in/jetzable/" target="_blank" class="flex items-center flex-col">
-        <img src="./img/linkedinlogo.png" alt="Linkedin" class="h-10 w-10 mb-1">
+      <a href="https://www.linkedin.com/in/jetzable/" target="_blank" class="flex flex-col items-center">
+        <img src="./img/linkedinlogo.png" alt="Linkedin" class="w-10 h-10 mb-1">
         <span>Palmidia Garay</span>
       </a>
     </div>
     <div class="col-span-1 mb-4">
-      <a href="mailto:gjetzable@gmail.com" target="_blank" class="flex items-center flex-col">
-        <img src="./img/gmaillogo.png" alt="gjetzable@gmail.com" class="h-10 w-10 mb-1">
+      <a href="mailto:gjetzable@gmail.com" target="_blank" class="flex flex-col items-center">
+        <img src="./img/gmaillogo.png" alt="gjetzable@gmail.com" class="w-10 h-10 mb-1">
         <span>gjetzable@gmail.com</span>
       </a>
     </div>
     <div class="col-span-1 mb-4">
-      <a href="https://api.whatsapp.com/send?phone=15546854218" target="_blank" class="flex items-center flex-col">
-        <img src="./img/whatsapplogo.png" alt="phone 5546854218" class="h-10 w-10 mb-1">
+      <a href="https://api.whatsapp.com/send?phone=15546854218" target="_blank" class="flex flex-col items-center">
+        <img src="./img/whatsapplogo.png" alt="phone 5546854218" class="w-10 h-10 mb-1">
         <span>+1 52 5546854218</span>
       </a>
     </div>
-    <div class="col-span-4 flex justify-end">
+    <div class="flex justify-end col-span-4">
       Made with passion by @jetzable
     </div>
   </footer>
