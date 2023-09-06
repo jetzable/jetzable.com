@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="tailwind.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rationale&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -26,330 +26,181 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
+  <script src="https://kit.fontawesome.com/237590b518.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
-<body class="bg-white font-rationale text-main">
-  <div id="particles-js"></div>
-  <img src="./img/jslogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-20 h-20 border-8 border-double rounded-full shadow-lg img1 border-dot">
-  <img src="./img/htmllogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-12 h-12 bg-white border-8 border-double rounded-full shadow-lg img2 border-dot">
-  <img src="./img/csslogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom bg-white border-8 border-double rounded-full shadow-lg h-14 w-14 img3 border-dot">
-  <img src="./img/vuelogo.png" alt="Javascript" class="absolute z-10 object-cover object-center bg-white border-8 border-double rounded-full shadow-lg h-14 w-14 img4 border-dot">
-  <img src="./img/tailwindcsslogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-16 h-16 bg-white border-8 border-double rounded-full shadow-lg img5 border-dot">
-  <img src="./img/grapgqllogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-10 h-10 bg-white border-8 border-double rounded-full shadow-lg img6 border-dot">
-  <img src="./img/nodejslogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-16 h-16 bg-white border-8 border-double rounded-full shadow-lg img7 border-dot">
-  <img src="./img/nodejslogo.png" alt="Javascript" class="absolute z-10 object-cover object-bottom w-12 h-12 bg-white border-8 border-double rounded-full shadow-lg img8 border-dot">
-  <header id="nav-bar" class="fixed top-0 right-0 z-10 hidden w-full bg-white md:block nav-bar">
-    <div class="flex items-center justify-between px-10 py-4 text-xl">
-      <a href="#" class="w-3/5 text-start item">Home</a>
-      <div class="flex items-center justify-end w-2/5">
-        <a href="#aboutme" class="text-right item">About me</a>
-        <a href="#experience" class="ml-4 text-right item">Experience</a>
-        <a href="#more" class="ml-4 text-right item">More</a>
-        <a href="https://www.tiktok.com/@lababito" target="_blank" class="justify-end col-span-2 ml-4 flexitems-center item hover:bg-dot">
-          <p class="flex items-center justify-center h-6 p-3 border-2 rounded min-w-32max-w-36 border-main">
-            <span>
-              <img src="./img/tt.png" alt="TikTok" class="w-4 h-4 mr-1">
-            </span>
-            <span>@lababito</span>
-          </p>
+<body class="font-lato">
+  <div class="grid w-full h-screen grid-cols-5 grid-rows-5 gap-8 p-16 bg-neumorph text-main">
+    <article class="flex flex-col items-center justify-center col-span-2 row-span-3 p-8 rounded-xl bg-neumorph neumorph-shadow">
+      <div class="flex items-center justify-center w-32 h-32 rounded-full bg-neumorph neu-shadow">
+        <div class="rounded-full inner-area">
+          <img src="./assets/images/palm.jpg" alt="Palmidia J. Garay" class="object-cover object-top w-full h-full rounded-full">
+        </div>
+      </div>
+      <div class="w-full p-4 my-4 text-center rounded-xl bg-neumorph neu-shadow">
+        <p class="mb-2 text-2xl font-semibold tracking-wider rounded-xl neu-shadow">Palmidia J. Garay</p>
+        <p class="text-lg rounded-xl neu-shadow">UX/UI Developer</p>
+      </div>
+      <div class="my-6 social-icons">
+        <a
+          href="https://github.com/jetzable"
+          target="_blank"
+          class="relative inline-flex w-10 h-10 mx-4 rounded-full neu-shadow bg-neumorph hover:bg-main hover:text-neumorph">
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jetzable/"
+          class="relative inline-flex w-10 h-10 mx-4 rounded-full neu-shadow bg-neumorph hover:bg-blue-700 hover:text-neumorph"
+          target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a
+          href="#"
+          class="relative inline-flex w-10 h-10 mx-4 rounded-full neu-shadow bg-neumorph hover:bg-rose-600 hover:text-neumorph"
+          target="_blank">
+          <i class="fab fa-instagram"></i>
         </a>
       </div>
-    </div>
-  </header>
-  <section id="home" class="relative flex flex-col justify-center w-2/3 h-screen mx-auto mb-8 border-b-2 md:w-1/2 border-main md:border-none md:mb-0">
-    <h1 class="text-xl ml12 md:text-3xl">Palmidia Garay</h1>
-    <p class="ml-4">
-      <h1 class="text-5xl ml11 md:text-7xl">
-        <span class="text-wrapper">
-          <span class="line line1"></span>
-          <span class="letters">Software developer</span>
-        </span>
-      </h1>
-    </p>
-  </section>
-  <section id="aboutme" class="items-center w-full px-4 md:w-2/3 md:grid md:grid-cols-12 md:mx-auto md:h-screen md:px-0">
-    <div class="relative col-span-6">
-      <h2 class="mb-4 text-5xl text-center md:text-8xl md:mb-6 md:text-left">
-        About Me
-      </h2>
-      <img src="./img/me.png" alt="Palmidia Garay" class="object-cover object-center mx-auto md:mx-0">
-    </div>
-    <div class="flex flex-col col-span-6 p-8 mt-8 overflow-scroll text-2xl text-justify bg-white border-2 rounded-lg shadow-xl h-3/4 border-main md:mt-0">
-      <p class="mb-2">
-        <span>It all started with a </span>
-        <span class="font-semibold text-dot">“Hello world!”</span>
-        <span>printed on a screen. My heart started to race and my thoughts were all over.</span>
-      </p>
-      <p class="mb-4">
-        <span>Imagine, all the things I could create and communicate through a single page. <br> I fell in love with</span>
-        <span class="font-semibold text-dot">FrontEnd Development</span>
-        <span>from the start and it’s been a crazy five years.</span>
-      </p>
-      <p class="mb-4">
-        <span>Then, I got my first job, met interesting people, people who were incredibly excited about</span>
-        <span class="font-semibold text-dot">Agile methodologies</span>
-        <span>the best practices for coding, and prioritizing user experience. I learned a lot, moved on to another company, and then another, and I always encountered more exciting experiences.</span>
-      </p>
-      <p class="mb-4">
-        <span>I have volunteered on a couple of programs, such as</span>
-        <span class="font-semibold text-dot">WILL (Alianzas Olascoaga),</span>
-        <span>a mentoring program to help young women to get into STEM careers giving them confidence and guidance about the fears they have, and</span>
-        <span class="font-semibold text-dot">FrontEnd Foxes (a tech community for women),</span>
-        <span>planning the meetups for the community in Mexico City.</span>
-      </p>
-      <p class="mb-4">
-        <span>I participated in the last three</span>
-        <span class="font-semibold text-dot">Dev Day 4 Women,</span>
-        <span>giving lightning talks about the interview process and how important it is to develop your soft skills in the tech industry.</span>
-      </p>
-      <p>
-        <span>Last but not least, I recently started a TikTok account</span>
-        <span>
-          <a href="https://www.tiktok.com/@lababito" target="_blank" class="font-semibold underline text-dot">@lababito</a>
-        </span>
-        <span>to share some of the tips and tricks that helped me grow as a woman, as a developer and as a person.</span>
-      </p>
-    </div>
-  </section>
-  <div class="w-2/3 mx-auto mt-16 mb-12 border-2 border-main md:hidden"></div>
-  <section id="experience" class="mx-auto md:w-2/3 md:flex md:flex-col md:items-start md:mt-24">
-    <h2 class="mb-6 text-5xl text-center md:text-8xl md:mb-8 md:text-left">
-      Experience
-    </h2>
-    <ul class="px-4 text-lg md:text-xl">
-      <li class="flex flex-col pb-1 pl-1 bg-gradient-to-tl from-white to-dot">
-        <div class="p-1 bg-white">
-          <div class="p-6">
-            <h3 class="font-bold text-dot">Apply Math and Computing</h3>
-            <h4>UNAM FES Acatlán, México</h4>
-            <h5>2008 - 2012</h5>
-            <span>Creative application of various mathematical and computational techniques to analyze, evaluate and solve, through models, problems in various areas of knowledge that directly or indirectly affect society.</span>
-          </div>
-        </div>
-      </li>
-      <li class="flex flex-col pb-1 pr-1 bg-gradient-to-tr from-white to-dot">
-        <div class="p-1 bg-white">
-          <div class="p-6">
-            <h3 class="font-bold text-dot">Network Engineer</h3>
-            <h4>GSC Ericsson Mx</h4>
-            <h5>2012 - 2016</h5>
-            <span>
-              Designed, developed and monitored phone and data networks in order to provide communications services.
-              Mantain and remotely resolved issues to ensure the quality of the service.
-              Telcel (Mexico), Sprint, Clearvision were some of the main customers.
-            </span>
-          </div>
-        </div>
-      </li>
-      <li class="flex flex-col pb-1 pl-1 bg-gradient-to-tr from-white to-dot">
-        <div class="p-1 bg-white">
-          <div class="p-6">
-            <h3 class="font-bold text-dot">IT Specialist</h3>
-            <h4>Compucom</h4>
-            <h5>2016 - 2017</h5>
-            <span>
-              Inbound calls and chats regarding certain applications or accounts for the customer's company employees. Remotely resolve issues and guided employees through the process in order to ensure the applications were working as expected.
-              Also, performing onboarding and offboarding processes such as creating or deleting employee accounts and profiles.
-            </span>
-          </div>
-        </div>
-      </li>
-      <li class="flex flex-col pb-1 pr-1 bg-gradient-to-tr from-white to-dot">
-        <div class="p-1 bg-white">
-          <div class="p-6">
-            <h3 class="font-bold text-dot">FrontEnd developer & UX/UI Design</h3>
-            <h4>Laboratoria CDMX</h4>
-            <h5>2017</h5>
-            <span>
-              Intensive 6 month course centered on Software development and UI/UX Design.
-              Develop small projects with multiple front end technologies, mostly with HTML, CSS and Javascript, using frameworks like VueJs and ReactJs.
-              Developed every project under agile methodologies, learning about all the development processes, roles and methodologies.
-            </span>
-          </div>
-        </div>
-      </li>
-      <li class="flex flex-col pb-1 pl-1 bg-gradient-to-tr from-white to-dot">
-        <div class="p-1 bg-white">
-          <div class="p-6">
-            <h3 class="font-bold text-dot">FrontEnd Developer</h3>
-            <h4>Gestionix (Konfio)</h4>
-            <h5>2018 - 2019</h5>
-            <div>
-              Developed from scratch a refreshed version of their Saas, a cloud business management system, built for small businesses.
-              Helped creating the design system ensuring reusable and escalable components.
-              <ul class="mt-4 list-disc list-inside">
-                Tech stack:
-                <li>VueJs 2</li>
-                <li>TailwindCss</li>
-                <li>Node</li>
-                <li>GraphQL - Apollo</li>
-                <li>Jest Unit testing</li>
-                <li>E2E Testing with Cypress</li>
-              </ul>
+    </article>
+    <article
+      class="relative col-span-2 col-start-1 row-span-2 row-start-4 overflow-y-scroll rounded-xl bg-neumorph neumorph-shadow">
+      <h2 class="sticky top-0 left-0 z-10 w-full px-8 py-2 text-lg font-semibold border-b-2 rounded-t-xl bg-neumorph">Contact Me</h2>
+      <form class="flex flex-col px-8 pt-4 pb-8 bg-neumorph" action="submit">
+        <input type="text" placeholder="Name" class="w-full h-10 p-4 mb-4 rounded-lg bg-neumorph neumorph-shadow">
+        <input type="email" placeholder="Email" class="w-full h-10 p-4 mb-4 rounded-lg bg-neumorph neumorph-shadow">
+        <textarea placeholder="Leave your comment here..." class="w-full p-4 mb-4 rounded-lg bg-neumorph neumorph-shadow"></textarea>
+        <button type="submit" class="h-10 px-6 py-2 font-semibold tracking-wide text-center border-none bg-neumorph neumorph-shadow rounded-xl hover:shadow-neuhover active:shadow-neuactive">
+          Submit
+        </button>
+      </form>
+    </article>
+    <article class="relative col-span-3 col-start-3 row-span-5 row-start-1 overflow-y-scroll rounded-xl bg-neumorph neumorph-shadow">
+      <h2 class="sticky top-0 left-0 z-10 w-full px-8 py-2 text-lg font-semibold border-b-2 rounded-t-xl bg-neumorph">Work Experience</h2>
+      <ul>
+        <li class="px-4">
+          <a class="flex items-center px-2 py-2 cursor-pointer hover:shadow-neuhover rounded-3xl" href="https://www.iff.com/" target="_blank" rel="noopener noreferrer">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full min-w-12 bg-neumorph neu-shadow">
+              <div class="rounded-full inner-area-small">
+                <img src="./assets/images/iff_logo.jpeg" alt="International Flavours & Fragances" class="object-cover object-center w-full h-full rounded-full">
+              </div>
             </div>
-          </div>
-        </div>
-      </li>
-      <li class="flex flex-col pb-1 pr-1 bg-gradient-to-tr from-white to-dot">
-        <div class="p-1 bg-white">
-          <div class="p-6">
-            <h3 class="font-bold text-dot">FrontEnd Tech Lead</h3>
-            <h4>WorkyRH</h4>
-            <h5>2019 -2021</h5>
-            <div>
-              <p>
-                Analyzed, planned and develop new features for the Saas human resources management application.
-                Ensure coding standard and good practices in all the user centered solutions.
-                Refactored old components and features improving performance and usability.
-                Also, helped migrating from css preprocessor to TailwindCss for all the visual styling.
+            <h3 class="w-2/3 ml-4 font-semibold">International Flavours & Fragrances</h3>
+          </a>
+          <section class="flex items-start pb-4 border-b-2">
+            <div class="min-w-[3rem]"></div>
+            <div class="flex-grow ml-4">
+              <p class="font-bold">UX/UI Developer</p>
+              <p class="text-justify">
+                Design and developed the UI for multiple web applications for internal use, using ReactJS, Redux, and Material UI.
               </p>
-              <ul class="mt-4 list-disc list-inside">
-                Tech stack:
-                <li>VueJs 2</li>
-                <li>TailwindCss</li>
-                <li>Less</li>
-                <li>NodeJs</li>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Jest Unit Testing</li>
-                <li>E2E Testing with Cypress</li>
-              </ul>
             </div>
-          </div>
-        </div>
-      </li>
-      <li class="flex flex-col pb-1 pl-1 bg-gradient-to-tr from-white to-dot">
-        <div class="p-1 bg-white">
-          <div class="p-6">
-            <h3 class="font-bold text-dot">Engineering Team Lead</h3>
-            <h4>Nowports</h4>
-            <h5>2021 - 2022</h5>
-            <div>
-              <p>
-                Applied scrum methodology, analyzed all the requirements and planned them according to the product and design roadmap solving present issues on the platform or creating new features to solve another user problem. <br><br>
-                Constantly negotiating the delivery time and feature scopes to get the best solutions covering all the user needs and requirements. <br>
-                Helped developers estimating tasks and communicating with all the other teams in order to obtain all the resources that my team needed so they can create the solutions on time. <br>
-                Always provided posible solutions for every task and performing code reviews to ensure code quality.
+          </section>
+        </li>
+        <li class="px-4">
+          <a class="flex items-center px-2 py-2 cursor-pointer hover:shadow-neuhover rounded-3xl" href="https://hi.teloslabs.co/" target="_blank" rel="noopener noreferrer">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full min-w-12 bg-neumorph neu-shadow">
+              <div class="rounded-full inner-area-small">
+                <img src="./assets/images/teloslabslogo.jpeg" alt="Telos Labs" class="object-cover object-center w-full h-full rounded-full">
+              </div>
+            </div>
+            <h3 class="w-2/3 ml-4 font-semibold">Telos Labs</h3>
+          </a>
+          <section class="flex items-start pb-4 border-b-2">
+            <div class="min-w-[3rem]"></div>
+            <div class="flex-grow ml-4">
+              <p class="font-bold">Software Developer</p>
+              <p class="text-justify">
+                Design and developed multiple web applications and platforms using Ruby on Rails as main Framework.
+                Constant communication with clients to understand their needs and provide the best solution.
               </p>
-              <ul class="mt-4 list-disc list-inside">
-                Tech stack:
-                <li>ReactJs</li>
-                <li>NodeJs</li>
-                <li>Express</li>
-                <li>SQL</li>
-                <li>Sass</li>
-                <li>Jest unit testing</li>
-              </ul>
             </div>
-          </div>
-        </div>
-      </li>
-      <li class="flex flex-col pb-1 pr-1 bg-gradient-to-tr from-white to-dot">
-        <div class="p-1 bg-white">
-          <div class="p-6">
-            <h3 class="font-bold text-dot">Software Developer</h3>
-            <h4>Telos Labs</h4>
-            <h5>Jun 2022 - Oct 2022</h5>
-            <div>
-              <p>
-                Creating and mantaining projects for companies with social impact.
+          </section>
+        </li>
+        <li class="px-4">
+          <a class="flex items-center px-2 py-2 cursor-pointer hover:shadow-neuhover rounded-3xl" href="https://nowports.com/" target="_blank" rel="noopener noreferrer">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full min-w-12 bg-neumorph neu-shadow">
+              <div class="rounded-full inner-area-small">
+                <img src="./assets/images/nowportslogo.png" alt="Nowports" class="object-cover object-center w-full h-full rounded-full">
+              </div>
+            </div>
+            <h3 class="w-2/3 ml-4 font-semibold">Nowports</h3>
+          </a>
+          <section class="flex items-start pb-4 border-b-2">
+            <div class="min-w-[3rem]"></div>
+            <div class="flex-grow ml-4">
+              <p class="font-bold">Team Lead (Tech)</p>
+              <p class="text-justify">
+                Developed multiple features over a ReactJs application, using Redux and a custom UI library.
+                Helped creating and orginizing the development process, using agile methodologies.
               </p>
-              <ul class="mt-4 list-disc list-inside">
-                Tech stack:
-                <li>Ruby on Rails</li>
-                <li>TailwindCss</li>
-                <li>Slim HTML</li>
-              </ul>
             </div>
-          </div>
-        </div>
-      </li>
-      <li class="flex flex-col pb-1 pl-1 bg-gradient-to-tr from-white to-dot">
-        <div class="p-1 bg-white">
-          <div class="p-6">
-            <h3 class="font-bold text-dot">UI / UX FrontEnd Developer</h3>
-            <h4>IFF (International Flavors & Fragances)</h4>
-            <h5>Current</h5>
-            <div>
-              <p>
-                Creating digital solutions for different engineering teams to visualized the data needed to take
-                quick decisions to improve business.
-                Involved in all the development process, from establishing the requirements to develop and deliver it, always looking to 
-                maintain the look and feel of the company.
+          </section>
+        </li>
+        <li class="px-4">
+          <a class="flex items-center px-2 py-2 cursor-pointer hover:shadow-neuhover rounded-3xl" href="https://www.worky.mx/" target="_blank" rel="noopener noreferrer">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full min-w-12 bg-neumorph neu-shadow">
+              <div class="rounded-full inner-area-small">
+                <img src="./assets/images/workylogo.png" alt="Worky" class="object-cover object-center w-full h-full rounded-full">
+              </div>
+            </div>
+            <h3 class="w-2/3 ml-4 font-semibold">Worky RH</h3>
+          </a>
+          <section class="flex items-start pb-4 border-b-2">
+            <div class="min-w-[3rem]"></div>
+            <div class="flex-grow ml-4">
+              <p class="font-bold">Frontend Lead</p>
+              <p class="text-justify">
+                Developed a Saas with VueJs, Vuex, and TailwindCss, to manage the human resources processes of a company.
+                Worked with the backend and product team to ensure the best experience for the users.
+                Took technical decisions and helped the team to improve their skills.
               </p>
-              <ul class="mt-4 list-disc list-inside">
-                Tech stack:
-                <li>ReactJs</li>
-                <li>Python</li>
-                <li>Material UI</li>
-              </ul>
             </div>
+          </section>
+        </li>
+        <li class="px-4">
+          <a class="flex items-center px-2 py-2 cursor-pointer hover:shadow-neuhover rounded-3xl" href="https://totalplay.gestionix.com/login" target="_blank" rel="noopener noreferrer">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full min-w-12 bg-neumorph neu-shadow">
+              <div class="rounded-full inner-area-small">
+                <img src="./assets/images/gxlogo.png" alt="Gestionix" class="object-cover object-center w-full h-full rounded-full">
+              </div>
+            </div>
+            <h3 class="w-2/3 ml-4 font-semibold">Gestionix</h3>
+          </a>
+          <section class="flex items-start pb-4 border-b-2">
+            <div class="min-w-[3rem]"></div>
+            <div class="flex-grow ml-4">
+              <p class="font-bold">Frontend Developer</p>
+              <p class="text-justify">
+                Built a Saas with VueJs, Vuex, and TailwindCss, to manage the financial processes of a company, from scratch.
+                Participate building the design system and the UI library.
+              </p>
+            </div>
+          </section>
+        </li>
+      </ul>
+    </article>
+      <!-- <div class="flex justify-between w-full">
+        <button class="w-full py-3 mr-8 text-lg border-none outline-none neu-shadow bg-neumorph rounded-md cursor-pointer z-[4] hover:shadow-neuhover">Website</button>
+        <button class="w-full py-3 text-lg border-none outline-none neu-shadow bg-neumorph rounded-md cursor-pointer z-[4] hover:shadow-neuhover">Contact</button>
+      </div> -->
+      <!-- <ul class="w-full mt-10">
+        <li class="flex flex-col justify-start">
+          <h2 class="mb-2 text-lg font-bold border-b-2">Github Detail</h2>
+          <p class="font-bold">@jetzable</p>
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>
+            <span id="github-repos-count" class="ml-2 mr-1 font-bold"></span>
+            <span>Repositories</span>
           </div>
-        </div>
-      </li>
-    </ul>
-  </section>
-  <section id="more" class="relative grid items-center w-2/3 h-screen grid-cols-12 mx-auto">
-    <h2 class="col-span-5 mt-24 mb-4 text-8xl">
-      More projects
-    </h2>
-    <ul class="col-span-7 text-xl">
-      <li class="absolute flex items-center justify-center h-10 p-1 rounded-lg shadow-lg bg-gradient-to-tl from-body to-dot img9">
-        <a href="http://danygonzalez.com/" target="_blank" class="flex items-center justify-center h-10 p-1 bg-white rounded-lg shadow-lg hover:bg-dot hover:text-white">danygonzalez.com</a>
-      </li>
-      <li class="absolute flex items-center justify-center h-10 p-1 rounded-lg shadow-lg bg-gradient-to-tl from-body to-dot img10">
-        <a href="https://mx.leveler.info/" target="_blank" class="flex items-center justify-center h-10 p-1 bg-white rounded-lg shadow-lg hover:bg-dot hover:text-white">leveler.info</a>
-      </li>
-      <li class="absolute flex items-center justify-center h-10 p-1 rounded-lg shadow-lg bg-gradient-to-tl from-body to-dot img11">
-        <a href="https://github.com/jetzable" target="_blank" class="flex items-center justify-center h-10 p-1 bg-white rounded-lg shadow-lg hover:bg-dot hover:text-white">Github Account</a>
-      </li>
-      <li class="absolute flex items-center justify-center h-10 p-1 rounded-lg shadow-lg bg-gradient-to-tl from-body to-dot img12">
-        <a href="https://www.instagram.com/poderosamexico/" target="_blank" class="flex items-center justify-center h-10 p-1 bg-white rounded-lg shadow-lg hover:bg-dot hover:text-white">PoderosaMx</a>
-      </li>
-      <li class="absolute flex items-center justify-center h-10 p-1 rounded-lg shadow-lg bg-gradient-to-tl from-body to-dot img13">
-        <a href="http://games.jetzable.com/" target="_blank" class="flex items-center justify-center h-10 p-1 bg-white rounded-lg shadow-lg hover:bg-dot hover:text-white">Javascript Games</a>
-      </li>
-    </ul>
-  </section>
-  <footer class="flex flex-col items-center w-full p-4 text-white md:h-32 bg-main md:grid md:grid-cols-12 md:gap-4 md:p-8 md:flex-row">
-    <h2 class="col-span-2 mb-4 text-3xl">
-      Contact Me
-    </h2>
-    <div class="col-span-1 mb-4">
-      <a href="https://twitter.com/Jetzable" target="_blank" class="flex flex-col items-center">
-        <img src="./img/twitter.png" alt="Twitter" class="w-10 h-10 mb-1">
-        <span>@jetzable</span>
-      </a>
-    </div>
-    <div class="col-span-1 mb-4">
-      <a href="https://www.instagram.com/la_babito/" target="_blank" class="flex flex-col items-center">
-        <img src="./img/iglogo.png" alt="IG Personal" class="w-10 h-10 mb-1">
-        <span>@La_babito</span>
-      </a>
-    </div>
-    <div class="col-span-1 mb-4">
-      <a href="https://www.linkedin.com/in/jetzable/" target="_blank" class="flex flex-col items-center">
-        <img src="./img/linkedinlogo.png" alt="Linkedin" class="w-10 h-10 mb-1">
-        <span>Palmidia Garay</span>
-      </a>
-    </div>
-    <div class="col-span-1 mb-4">
-      <a href="mailto:gjetzable@gmail.com" target="_blank" class="flex flex-col items-center">
-        <img src="./img/gmaillogo.png" alt="gjetzable@gmail.com" class="w-10 h-10 mb-1">
-        <span>gjetzable@gmail.com</span>
-      </a>
-    </div>
-    <div class="col-span-1 mb-4">
-      <a href="https://api.whatsapp.com/send?phone=15546854218" target="_blank" class="flex flex-col items-center">
-        <img src="./img/whatsapplogo.png" alt="phone 5546854218" class="w-10 h-10 mb-1">
-        <span>+1 52 5546854218</span>
-      </a>
-    </div>
-    <div class="flex justify-end col-span-4">
-      Made with passion by @jetzable
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        </li>
+        <li class="">
+          <i class="fa-brands fa-tiktok"></i>
+          <span id="tiktok-followers-count" class="ml-2 mr-1 font-bold">3661</span>
+          <span>Followers</span>
+        </li>
+      </ul> -->
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  <script src="./main.js"></script>
+  <script type="module" src="./main.js"></script>
 </body>
 </html>

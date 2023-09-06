@@ -2,3 +2,4 @@
 /animated
 /games
 .DS_Store
+.env
